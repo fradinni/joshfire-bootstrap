@@ -1,7 +1,7 @@
 {
   "name": "jnuine-backend",
   "version": "2.0.0",
-  "author":"Nicolas FRADIN"
+  "author":"Nicolas FRADIN",
 
   "dependencies": {
     "mongoose": "3.6.x",
@@ -11,8 +11,8 @@
 
   "scripts" : {
 
-  }
-  
+  },
+
   "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"

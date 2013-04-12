@@ -1,7 +1,7 @@
-jnuine-backend
+joshfire-bootstrap
 ==============
 
-Jnuine Backend v2
+Joshfire Framework Bootstrap
 
 #Requirements
 
