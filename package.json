@@ -1,0 +1,20 @@
+{
+  "name": "jnuine-backend",
+  "version": "2.0.0",
+  "author":"Nicolas FRADIN"
+
+  "dependencies": {
+    "mongoose": "3.6.x",
+    "express": "3.1.x",
+    "underscore": "x"
+  },
+
+  "scripts" : {
+
+  }
+  
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
