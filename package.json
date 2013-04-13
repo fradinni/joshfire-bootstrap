@@ -6,7 +6,8 @@
   "dependencies": {
     "mongoose": "3.6.x",
     "express": "3.1.x",
-    "underscore": "x"
+    "underscore": "x",
+    "sequence": "2.2.x"
   },
 
   "scripts" : {

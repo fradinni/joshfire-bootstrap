@@ -5,17 +5,22 @@
  * Copyright 2013, Joshfire, licensed under an MIT license
  * http://framework.joshfire.com/license
  */
-/*global console*/
 
 define([
-  'joshlib!utils/dollar',
-  'joshlib!utils/onready'
-], function ($, onReady) {
+  'joshlib!utils/dollar'
+], function ($) {
 	
-  console.log('Initializing...');
+	/**
+	 * Application ENTRY POINT
+	 *
+	 */
+	var initialize = function() {
+		console.log('APPLICATION initialized !');
+	}
+	
 
-  onReady(function () {
-    console.log('Application started!');
-  });
-
+	// Exposed methods
+	return {
+		initialize: initialize
+	}
 });
