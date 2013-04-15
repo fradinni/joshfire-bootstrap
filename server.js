@@ -73,28 +73,6 @@ var Models = require('./db/models')(mongoose);
 
 
 //
-// Check if user's roles exists
-//
-var roles = ["ADMIN", "USER"];
-
-_.each(roles, function(role, index) {
-	Models.Role.findOne({name: role}, function(err, doc) {
-		if(err) {
-			console.log('Unable to find role: ' + role);
-			return;
-		}
-
-		if(doc) {
-			console.log(" -> Role already exists: " + role);
-		} else {
-			console.log(" -> Create role: " + role);
-			new Models.Role({name: role}).save();
-		}
-	});
-});
-
-
-//
 // Define API routes
 // 
 console.log('[API] Defining routes');

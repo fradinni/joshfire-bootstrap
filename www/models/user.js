@@ -1,9 +1,10 @@
 define([
 	'joshlib!vendor/underscore',
+	'joshlib!vendor/backbone',
 	'joshlib!utils/dollar',
 	'joshlib!model',
 	'joshlib!collection'
-],function($, Model, Collection) {
+],function(_, Backbone, $, Model, Collection) {
 	return {
 
 
@@ -12,8 +13,10 @@ define([
 		 */
 		model: Model.extend({
 			
+			idAttribute: "_id"
+
 			// API URL for User model
-			urlRoot: '/user'
+		  ,	urlRoot: '/api/user'
 			
 		}),
 
@@ -22,10 +25,10 @@ define([
 		/**
 		 *
 		 */
-		collection: Collection.extend({
+		collection: Backbone.Collection.extend({
 
 			// API URL for User's Collection
-			url: '/users'
+			url: '/api/users'
 
 		})
 

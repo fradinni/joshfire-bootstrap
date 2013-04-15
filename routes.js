@@ -42,7 +42,7 @@ module.exports = {
 
 		// API Routes
 		initRoutes(app, 'users', true);
-
+		initRoutes(app, 'jnuine', true);
 		// Other routes
 		
 	}
